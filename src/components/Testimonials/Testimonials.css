@@ -1,0 +1,60 @@
+.testimonials-section {
+  @apply py-20 px-4 relative;
+}
+
+.testimonials-container {
+  @apply container mx-auto max-w-6xl;
+}
+
+.testimonials-header {
+  @apply text-2xl text-barber-gold italic mb-8 text-center;
+}
+
+.testimonials-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 lg:mb-16 uppercase tracking-wide text-center;
+}
+
+.testimonials-slider {
+  @apply flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8;
+  @apply overflow-x-auto snap-x snap-mandatory md:overflow-visible md:snap-none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.testimonials-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  @apply bg-barber-dark/50 p-6 rounded-lg border border-barber-gold/10 backdrop-blur-sm relative;
+  @apply flex-shrink-0 w-[85vw] md:w-auto snap-center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+  @apply text-barber-cream/80 mb-6 relative leading-relaxed;
+}
+
+.quote-mark {
+  @apply text-barber-gold/20 absolute -top-4 -left-2 text-5xl;
+}
+
+.testimonial-author {
+  @apply text-barber-gold font-medium;
+}
+
+.testimonial-date {
+  @apply text-barber-cream/60 text-sm mt-1;
+}
+
+.slider-dots {
+  @apply flex justify-center gap-2 mt-8 md:hidden;
+}
+
+.slider-dot {
+  @apply w-2 h-2 rounded-full bg-barber-gold/20 transition-all duration-300;
+}
+
+.slider-dot.active {
+  @apply bg-barber-gold w-4;
+}

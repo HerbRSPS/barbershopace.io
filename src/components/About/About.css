@@ -1,0 +1,74 @@
+.about-section {
+  @apply py-20 px-4 relative;
+}
+
+.about-container {
+  @apply container mx-auto max-w-6xl relative z-10;
+}
+
+.about-content {
+  @apply flex flex-col lg:flex-row gap-12 items-start;
+}
+
+.about-info {
+  @apply lg:w-1/2;
+}
+
+.about-header {
+  @apply text-2xl text-barber-gold italic mb-8;
+}
+
+.about-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 uppercase tracking-wide;
+}
+
+.about-mission {
+  @apply text-lg md:text-xl text-barber-gold italic mb-8;
+}
+
+.about-text {
+  @apply text-barber-cream/80 leading-relaxed max-w-3xl mb-12;
+}
+
+.about-image-section {
+  @apply relative lg:w-1/2;
+}
+
+.about-image {
+  @apply w-full h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-lg;
+}
+
+.hours-overlay {
+  @apply absolute bg-barber-dark/95 p-4 md:p-6 lg:p-8 border border-barber-gold;
+  @apply w-[90%] md:w-[320px] left-1/2 -translate-x-1/2 bottom-8;
+  @apply lg:w-[320px] lg:left-auto lg:right-[-80px] lg:bottom-auto lg:top-1/2 lg:translate-x-0 lg:-translate-y-1/2;
+}
+
+.hours-title {
+  @apply text-xl md:text-2xl font-bold text-barber-gold mb-4 lg:mb-6 text-center uppercase;
+}
+
+.hours-row {
+  @apply flex justify-between gap-4 md:gap-8 lg:gap-12 py-2 border-b border-barber-gold/30 last:border-0;
+}
+
+.hours-day {
+  @apply text-sm md:text-base text-barber-cream font-medium uppercase;
+}
+
+.hours-time {
+  @apply text-sm md:text-base text-barber-gold text-right;
+}
+
+/* Adjust image section to handle overlay */
+.about-image-section {
+  @apply relative lg:w-1/2;
+}
+
+.about-cta {
+  @apply mt-8 flex md:justify-start justify-center;
+}
+
+.book-button {
+  @apply bg-barber-burgundy text-barber-gold px-8 py-3 rounded-md hover:bg-barber-gold hover:text-barber-dark border border-barber-gold transition-all uppercase tracking-wide;
+}

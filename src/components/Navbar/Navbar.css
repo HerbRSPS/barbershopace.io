@@ -1,0 +1,81 @@
+.navbar {
+  @apply fixed left-0 right-0 bg-barber-dark shadow-md z-50;
+  @apply transition-all duration-500 ease-in-out;
+  @apply top-[40px];
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  @apply md:transform-none md:opacity-100;
+}
+
+.navbar-container {
+  @apply container mx-auto px-4 py-4 flex items-center justify-between;
+}
+
+.nav-socials {
+  @apply hidden md:flex items-center space-x-4;
+}
+
+.social-link {
+  @apply text-barber-cream/60 hover:text-barber-gold transition-colors duration-300;
+}
+
+.nav-links {
+  @apply hidden md:flex items-center space-x-6;
+}
+
+.nav-link {
+  @apply text-barber-cream hover:text-barber-gold transition-colors duration-200 bg-transparent border-none cursor-pointer;
+}
+
+.book-now {
+  @apply bg-barber-burgundy text-barber-gold px-4 py-2 rounded-md hover:bg-barber-gold hover:text-barber-dark border border-barber-gold transition-all duration-200;
+}
+
+.mobile-menu-button {
+  @apply md:hidden p-2 text-barber-cream hover:text-barber-gold;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .navbar-container {
+    @apply justify-end;
+  }
+
+  .nav-links {
+    @apply fixed top-[72px] left-0 right-0 bg-barber-dark shadow-md flex-col py-4 space-y-4;
+    display: none;
+  }
+
+  .nav-links.show {
+    @apply flex;
+    animation: slideDown 500ms ease-in-out forwards;
+  }
+
+  .nav-link {
+    @apply block px-4 py-2 text-center hover:text-barber-gold w-full;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .book-now {
+    @apply mx-4 mb-6;
+  }
+
+  .mobile-socials {
+    @apply flex justify-center gap-6 pt-4 border-t border-barber-gold/10 mx-4;
+  }
+}

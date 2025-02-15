@@ -1,0 +1,30 @@
+.announcement-bar {
+  @apply bg-barber-burgundy text-barber-gold z-[60];
+  @apply fixed top-0 left-0 right-0;
+  @apply border-b border-barber-gold/20;
+  @apply backdrop-blur-sm;
+}
+
+.announcement-container {
+  @apply container mx-auto px-4;
+}
+
+.announcement-content {
+  @apply flex items-center justify-center text-center;
+  @apply h-[40px] md:h-[44px] relative overflow-hidden px-4;
+}
+
+.announcement-message {
+  @apply absolute w-full transition-all duration-500 ease-in-out;
+  @apply opacity-0 transform translate-y-8;
+  @apply text-sm leading-tight md:text-base md:leading-normal;
+  @apply max-w-[280px] md:max-w-none mx-auto;
+}
+
+.announcement-message.active {
+  @apply opacity-100 transform translate-y-0;
+}
+
+.announcement-message.inactive {
+  @apply opacity-0 transform -translate-y-8;
+}

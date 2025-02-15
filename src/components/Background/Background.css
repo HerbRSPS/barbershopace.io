@@ -1,0 +1,125 @@
+.background-effects {
+  @apply absolute pointer-events-none w-full;
+  z-index: 0;
+}
+
+.glow {
+  @apply absolute blur-[200px] mix-blend-screen;
+  background: radial-gradient(circle at center, var(--color) 0%, transparent 70%);
+}
+
+.background-effects {
+  height: 100vh;
+}
+
+.background-effects:nth-child(1) {
+  top: 0;
+}
+
+.background-effects:nth-child(2) {
+  top: 100vh;
+}
+
+.background-effects:nth-child(3) {
+  top: 200vh;
+}
+
+.background-effects:nth-child(4) {
+  top: 300vh;
+}
+
+.background-effects:nth-child(5) {
+  top: 400vh;
+}
+
+.background-effects:nth-child(6) {
+  top: 500vh;
+}
+
+.background-effects:nth-child(7) {
+  top: 600vh;
+}
+
+.background-effects:nth-child(8) {
+  top: 700vh;
+}
+
+.glow-1 {
+  --color: rgb(139, 38, 53);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25%;
+  opacity: 0.15;
+}
+
+.glow-2 {
+  --color: rgb(212, 176, 98);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25%;
+  opacity: 0.12;
+}
+
+.glow-3 {
+  --color: rgb(139, 38, 53);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25%;
+  opacity: 0.15;
+}
+
+.glow-4 {
+  --color: rgb(212, 176, 98);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25%;
+  opacity: 0.12;
+}
+
+.glow-5 {
+  --color: rgb(139, 38, 53);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25%;
+  opacity: 0.15;
+}
+
+.glow-6 {
+  --color: rgb(212, 176, 98);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25%;
+  opacity: 0.12;
+}
+
+.glow-7 {
+  --color: rgb(139, 38, 53);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25%;
+  opacity: 0.15;
+}
+
+.glow-8 {
+  --color: rgb(212, 176, 98);
+  width: 50vw;
+  height: 50vw;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25%;
+  opacity: 0.12;
+}

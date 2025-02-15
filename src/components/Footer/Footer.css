@@ -1,0 +1,35 @@
+.footer {
+  @apply bg-barber-dark/80 border-t border-barber-gold/10 backdrop-blur-sm mt-20;
+}
+
+.footer-container {
+  @apply container mx-auto max-w-6xl px-4 py-12;
+}
+
+.footer-content {
+  @apply flex flex-col items-center text-center;
+}
+
+.footer-logo {
+  @apply w-24 h-24 mb-6 object-contain;
+}
+
+.footer-motto {
+  @apply text-xl text-barber-gold italic mb-8;
+}
+
+.footer-socials {
+  @apply flex gap-6 mb-8;
+}
+
+.social-link {
+  @apply text-barber-cream/60 hover:text-barber-gold transition-colors duration-300;
+}
+
+.social-icon {
+  @apply w-6 h-6;
+}
+
+.footer-copyright {
+  @apply text-barber-cream/40 text-sm;
+}

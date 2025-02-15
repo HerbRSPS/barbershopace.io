@@ -1,0 +1,40 @@
+.floating-buttons {
+  @apply fixed bottom-6 right-6 flex flex-col gap-4 z-50;
+  @apply transition-all duration-500 ease-in-out transform;
+}
+
+.floating-button {
+  @apply w-12 h-12 rounded-full bg-barber-burgundy text-barber-gold border border-barber-gold;
+  @apply flex items-center justify-center shadow-lg hover:bg-barber-gold hover:text-barber-dark;
+  @apply transition-all duration-500 ease-in-out cursor-pointer transform hover:scale-110;
+}
+
+.contact-popup {
+  @apply fixed bottom-24 right-6 bg-barber-dark/95 border border-barber-gold/20 rounded-lg p-4 z-[9999];
+  @apply backdrop-blur-sm shadow-xl transform transition-all duration-500 ease-in-out;
+  @apply w-[280px] opacity-0 invisible;
+  transform: translateY(20px) scale(0.95);
+}
+
+.contact-popup.show {
+  @apply opacity-100 visible;
+  transform: translateY(0) scale(1);
+}
+
+.popup-header {
+  @apply text-barber-gold font-medium mb-4 text-center;
+}
+
+.popup-socials {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.social-button {
+  @apply flex items-center gap-2 px-3 py-2 rounded-md bg-barber-dark/50 text-barber-cream/80;
+  @apply hover:bg-barber-burgundy hover:text-barber-gold border border-barber-gold/10;
+  @apply transition-all duration-300 ease-in-out text-sm transform hover:scale-105;
+}
+
+.social-icon {
+  @apply w-4 h-4;
+}

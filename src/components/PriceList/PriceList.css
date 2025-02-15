@@ -1,0 +1,60 @@
+.price-section {
+  @apply py-20 px-4 relative;
+}
+
+.price-container {
+  @apply container mx-auto max-w-6xl;
+}
+
+.price-header {
+  @apply text-2xl text-barber-gold italic mb-8 text-center;
+}
+
+.price-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 lg:mb-16 uppercase tracking-wide text-center;
+}
+
+.price-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16;
+}
+
+.price-category {
+  @apply mb-12 lg:mb-0 bg-barber-dark/50 rounded-lg p-6 lg:p-8 border border-barber-gold/10 backdrop-blur-sm;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  @apply text-2xl font-bold text-barber-gold mb-8 uppercase tracking-wide text-center pb-4 border-b border-barber-gold/20;
+}
+
+.price-item.group {
+  @apply flex items-start gap-8 py-6 border-b border-barber-gold/10 last:border-b-0 hover:bg-barber-gold/5 px-6 rounded-lg transition-all duration-300 -mx-2;
+}
+
+.service-info {
+  @apply flex-1 pt-2.5;
+}
+
+.service-name {
+  @apply text-barber-cream font-medium tracking-wide;
+}
+
+.service-description {
+  @apply text-sm text-barber-cream/60 hidden group-hover:block transition-all duration-300 mt-1;
+}
+
+.service-price {
+  @apply text-barber-gold font-bold tabular-nums text-lg bg-barber-dark/40 px-6 py-1.5 rounded-full border border-barber-gold/20 flex-shrink-0;
+}
+
+.book-container {
+  @apply mt-16 text-center relative z-10;
+}
+
+.book-text {
+  @apply text-barber-cream/80 mb-6 text-lg max-w-2xl mx-auto;
+}
+
+.book-button {
+  @apply inline-block bg-barber-burgundy text-barber-gold px-10 py-4 rounded-md hover:bg-barber-gold hover:text-barber-dark border border-barber-gold transition-all uppercase tracking-wide font-medium shadow-lg hover:shadow-xl;
+}

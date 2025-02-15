@@ -1,0 +1,125 @@
+.team-section {
+  @apply py-20 px-4 relative;
+}
+
+.team-container {
+  @apply container mx-auto max-w-6xl;
+}
+
+.team-header {
+  @apply text-2xl text-barber-gold italic mb-8 text-center;
+}
+
+.team-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 lg:mb-16 uppercase tracking-wide text-center;
+}
+
+.team-grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12;
+}
+
+.team-category {
+  @apply flex flex-col items-center;
+}
+
+.category-header {
+  @apply flex items-center justify-center mb-6;
+}
+
+.card-logo {
+  @apply w-6 h-6 text-barber-gold opacity-80 flex-shrink-0;
+}
+
+.category-title {
+  @apply text-2xl font-bold text-barber-gold uppercase tracking-wide text-center mx-4;
+}
+
+.category-description {
+  @apply text-barber-cream/80 text-center mb-8 max-w-sm;
+}
+
+.member-cards {
+  @apply w-full;
+}
+
+.member-slider {
+  @apply flex md:block gap-4 overflow-x-auto snap-x snap-mandatory md:overflow-visible md:snap-none;
+  @apply md:space-y-6;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.member-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.member-card {
+  @apply bg-barber-dark/50 rounded-lg border border-barber-gold/10 backdrop-blur-sm relative;
+  @apply flex-shrink-0 w-[85vw] md:w-auto snap-center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .member-card {
+    @apply transform transition-all duration-300 hover:scale-105 hover:border-barber-gold/30;
+  }
+}
+
+.member-image {
+  @apply w-full h-64 object-cover rounded-t-lg;
+}
+
+.member-info {
+  @apply p-6;
+}
+
+.member-card.ace {
+  @apply border-barber-gold/30;
+  background: linear-gradient(45deg, rgba(139, 38, 53, 0.3), rgba(26, 26, 26, 0.3));
+}
+
+.member-card.king {
+  @apply border-barber-gold/20;
+  background: linear-gradient(45deg, rgba(212, 176, 98, 0.15), rgba(26, 26, 26, 0.3));
+}
+
+.member-card.jack {
+  @apply border-barber-gold/10;
+}
+
+.member-name {
+  @apply text-xl font-medium text-barber-gold mb-2;
+}
+
+.member-title {
+  @apply text-barber-cream/60 text-sm mb-4;
+}
+
+.member-specialties {
+  @apply space-y-2;
+}
+
+.specialty {
+  @apply flex items-center gap-2 text-barber-cream/80;
+}
+
+.specialty-icon {
+  @apply text-barber-gold w-4 h-4;
+}
+
+.experience-badge {
+  @apply absolute top-4 right-4 bg-barber-dark/60 px-3 py-1 rounded-full text-sm;
+  @apply border border-barber-gold/20 text-barber-gold/80;
+}
+
+.slider-dots {
+  @apply flex justify-center gap-2 mt-4 md:hidden;
+}
+
+.slider-dot {
+  @apply w-2 h-2 rounded-full bg-barber-gold/20 transition-all duration-300;
+}
+
+.slider-dot.active {
+  @apply bg-barber-gold w-4;
+}
